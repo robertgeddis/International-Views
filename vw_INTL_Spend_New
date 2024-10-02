@@ -34,7 +34,7 @@ from (
       date(date_start) as date,
       lower(campaign_Type) as role,
       'Facebook' as source, 
-      case when lower(country) = 'en' then 'ca' 
+      case when lower(country) = 'en' then 'po' 
            when lower(country) = '_'  then 'au' 
            when lower(country) in ('ve', 'po')  then 'de' 
         else lower(country) end as countrycode, 
